@@ -3,6 +3,7 @@ import { HeaderComponent } from '@components/portofolio-web/header/header.compon
 import { BannerComponent } from '@components/portofolio-web/banner/banner.component';
 import { HeaderMenuComponent } from '@components/portofolio-web/header-menu/header-menu.component';
 import { AboutUsComponent } from '@components/portofolio-web/about-us/about-us.component';
+import { NewsComponent } from '@components/portofolio-web/news/news.component';
 
 @Component({
   selector: 'app-portfolio-web',
@@ -12,6 +13,7 @@ import { AboutUsComponent } from '@components/portofolio-web/about-us/about-us.c
     BannerComponent,
     HeaderMenuComponent,
     AboutUsComponent,
+    NewsComponent,
   ],
   templateUrl: './portfolio-web.component.html',
   styleUrl: './portfolio-web.component.css',
