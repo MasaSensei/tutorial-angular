@@ -5,26 +5,18 @@
     autoplay-disable-on-interaction="false"
     effect="fade"
   >
+    @for (image of listImages; track image) {
     <swiper-slide>
-      <img
-        src="/assets/images/bg-1.jpg"
-        alt="banner-image"
-        class="banner-image"
-      />
+      <img [src]="image" alt="banner-image" class="banner-image" />
     </swiper-slide>
+    } @empty {
     <swiper-slide>
-      <img
-        src="/assets/images/bg-2.jpg"
-        alt="banner-image"
-        class="banner-image"
-    /></swiper-slide>
-    <swiper-slide>
-      <img
-        src="/assets/images/bg-3.jpg"
-        alt="banner-image"
-        class="banner-image"
-      />
+      <h1>No Image</h1>
     </swiper-slide>
+    }
+    <!-- <swiper-slide *ngFor="let image of listImages">
+      <img src="{{ image }}" alt="banner-image" class="banner-image" />
+    </swiper-slide> -->
   </swiper-container>
   <div class="banner-overlay">
     <div class="banner-layer"></div>
