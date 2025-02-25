@@ -5,6 +5,7 @@ import { HeaderMenuComponent } from '@components/portofolio-web/header-menu/head
 import { AboutUsComponent } from '@components/portofolio-web/about-us/about-us.component';
 import { NewsComponent } from '@components/portofolio-web/news/news.component';
 import { AchievementComponent } from '@components/portofolio-web/achievement/achievement.component';
+import { TestimonialComponent } from '@components/portofolio-web/testimonial/testimonial.component';
 
 @Component({
   selector: 'app-portfolio-web',
@@ -16,6 +17,7 @@ import { AchievementComponent } from '@components/portofolio-web/achievement/ach
     AboutUsComponent,
     NewsComponent,
     AchievementComponent,
+    TestimonialComponent,
   ],
   templateUrl: './portfolio-web.component.html',
   styleUrl: './portfolio-web.component.css',
